@@ -1,16 +1,16 @@
 <template>
   <div class="home">
-    <HelloWorld />
+    <Calendar />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/LabCalendar.vue'
+import Calendar from '@/components/LabCalendar.vue'
 export default {
   name: 'LabCalendar',
   components: {
-    HelloWorld
+    Calendar
   }
 }
 </script>
