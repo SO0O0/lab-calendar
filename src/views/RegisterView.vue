@@ -1,13 +1,14 @@
 <template>
   <div id="register">
     <div class="form">
+      <h2>在室登録</h2>
     <!-- 名前フォーム -->
             <div class="form-name">
                 <p>名前</p>
                 <input type="text" name="name" placeholder="名前" v-model="name">
             </div>
         <div>
-          <button disabled>送信する</button>
+          <button disabled>登録する</button>
         </div>
     </div>
   </div>
@@ -22,6 +23,11 @@
   margin:0 auto;
   width:40%;
   background-color:whitesmoke;
+  border-radius:10px;
+}
+
+.form h2{
+  padding-top:40px;
 }
 
 .form-name{
