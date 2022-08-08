@@ -1,11 +1,26 @@
 <template>
   <div id="register">
-    <div class="form">
+    <div class="forms">
       <h2>在室登録</h2>
-    <!-- 名前フォーム -->
             <div class="form-name">
                 <p>名前</p>
                 <input type="text" name="name" placeholder="名前" v-model="name">
+            </div>
+            <div class="form-name">
+                <p>入室時刻</p>
+                <input type="date" name="intime" placeholder="入室時刻" v-model="name">
+            </div>
+            <div class="form-name">
+                <p>退室時刻</p>
+                <input type="date" name="outtime" placeholder="退室時刻" v-model="name">
+            </div>
+            <div class="form-name">
+                <p>コメント</p>
+                <input type="text" name="comment" placeholder="コメント" v-model="name">
+            </div>
+            <div class="form-pass">
+                <p>パスワード</p>
+                <input type="text" name="pass" placeholder="パスワード" v-model="name">
             </div>
         <div>
           <button disabled>登録する</button>
@@ -19,20 +34,25 @@
     text-align:center;
 }
 
-.form{
+.forms{
   margin:0 auto;
   width:40%;
   background-color:whitesmoke;
   border-radius:10px;
 }
 
-.form h2{
+.forms h2{
   padding-top:40px;
 }
 
 .form-name{
-    padding:15px 0;
-    margin-bottom:30px;
+    padding-top:15px 0;
+    margin-bottom:50px
+}
+
+.form-pass{
+    padding-top:15px 0;
+    margin-bottom:70px;
 }
 
 input{
