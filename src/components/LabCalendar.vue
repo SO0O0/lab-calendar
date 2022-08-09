@@ -152,7 +152,6 @@ export default {
 ---------------------------------------*/
 #cal-header {
   font-size: 18px;
-  margin-top: 30px;
   text-align: center;
 }
 #cal-header span {
@@ -168,10 +167,8 @@ export default {
 ---------------------------------------*/
 #cal-main {
   font-size: 20px;
-  line-height: 70px;
   table-layout: fixed;
   margin: auto;
-  width: 70%;
   margin-bottom: 1rem;
   color: #212529;
 }
@@ -195,4 +192,19 @@ export default {
 .cal-day.active {
   background-color: #375a7f;
 }
+
+@media screen and (max-width: 959px){
+  #cal-main {
+    line-height: 60px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 960px){
+  #cal-main {
+    line-height: 70px;
+    width: 70%;
+  }
+}
+
 </style>
