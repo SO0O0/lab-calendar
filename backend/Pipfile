@@ -1,5 +1,7 @@
 [scripts]
 start = "python3 app.py"
 
-[packages]
-flask = "*"
+[dev-packages]
+autopep8 = "*"
+flake8 = "*"
+rope = "*"
