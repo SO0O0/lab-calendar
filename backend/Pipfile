@@ -8,3 +8,4 @@ rope = "*"
 
 [packages]
 flask-restful = "*"
+flask-sqlalchemy = "*"
