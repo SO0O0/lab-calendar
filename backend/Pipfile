@@ -5,3 +5,6 @@ start = "python3 app.py"
 autopep8 = "*"
 flake8 = "*"
 rope = "*"
+
+[packages]
+flask-restful = "*"
