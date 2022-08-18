@@ -8,8 +8,8 @@ class RegisterModel(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.Text)
-    intime = db.Column(db.DateTime)
-    outtime = db.Column(db.DateTime)
+    intime = db.Column(db.Text)
+    outtime = db.Column(db.Text)
     comment = db.Column(db.Text)
     created_at = db.Column(db.DateTime, nullable=False, default=datetime.now)
 
@@ -18,7 +18,7 @@ def init_db(app):
     db.create_all()
 
 def get_all():
-    return RegisterModel.order_by(RegisterModel.id).all()
+    return RegisterModel.query.order_by(RegisterModel.id).all()
 
 def insert(name, intime, outtime, comment):
     model = RegisterModel(name=name, intime=intime, outtime=outtime, comment=comment)
